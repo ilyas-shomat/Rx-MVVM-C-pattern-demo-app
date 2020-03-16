@@ -3,19 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA979CD09FC4EC0259484823 /* Pods_Rx_MVVM_C_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C4D062843F96401C133855 /* Pods_Rx_MVVM_C_Test.framework */; };
 		FD0747C9241F81E200E371E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0747C8241F81E200E371E4 /* AppDelegate.swift */; };
 		FD0747CB241F81E200E371E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0747CA241F81E200E371E4 /* SceneDelegate.swift */; };
 		FD0747CD241F81E200E371E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0747CC241F81E200E371E4 /* ViewController.swift */; };
 		FD0747D0241F81E200E371E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0747CE241F81E200E371E4 /* Main.storyboard */; };
 		FD0747D2241F81E300E371E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0747D1241F81E300E371E4 /* Assets.xcassets */; };
 		FD0747D5241F81E300E371E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0747D3241F81E300E371E4 /* LaunchScreen.storyboard */; };
+		FD0747E1241F826600E371E4 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0747E0241F826600E371E4 /* Second.storyboard */; };
+		FD0747E3241F827F00E371E4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0747E2241F827F00E371E4 /* SecondViewController.swift */; };
+		FD0747E5241F828D00E371E4 /* FirstVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0747E4241F828D00E371E4 /* FirstVM.swift */; };
+		FD0747E7241F829A00E371E4 /* SecondVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0747E6241F829A00E371E4 /* SecondVM.swift */; };
+		FD0747EA241F82B300E371E4 /* FirstCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0747E9241F82B300E371E4 /* FirstCoordinator.swift */; };
+		FD0747EC241F82C000E371E4 /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0747EB241F82C000E371E4 /* SecondCoordinator.swift */; };
+		FD0747EE241F840700E371E4 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0747ED241F840700E371E4 /* MainCoordinator.swift */; };
+		FD0747F0241F841800E371E4 /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0747EF241F841800E371E4 /* StoryboardInitializable.swift */; };
+		FD0747F2241F842A00E371E4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0747F1241F842A00E371E4 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		238E92FD073F302DA731E0A7 /* Pods-Rx-MVVM-C Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx-MVVM-C Test.debug.xcconfig"; path = "Target Support Files/Pods-Rx-MVVM-C Test/Pods-Rx-MVVM-C Test.debug.xcconfig"; sourceTree = "<group>"; };
+		23C4D062843F96401C133855 /* Pods_Rx_MVVM_C_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rx_MVVM_C_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF1623C57C3FF397FB40E2F /* Pods-Rx-MVVM-C Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx-MVVM-C Test.release.xcconfig"; path = "Target Support Files/Pods-Rx-MVVM-C Test/Pods-Rx-MVVM-C Test.release.xcconfig"; sourceTree = "<group>"; };
 		FD0747C5241F81E200E371E4 /* Rx-MVVM-C Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rx-MVVM-C Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0747C8241F81E200E371E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD0747CA241F81E200E371E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +37,15 @@
 		FD0747D1241F81E300E371E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD0747D4241F81E300E371E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD0747D6241F81E300E371E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD0747E0241F826600E371E4 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		FD0747E2241F827F00E371E4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FD0747E4241F828D00E371E4 /* FirstVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVM.swift; sourceTree = "<group>"; };
+		FD0747E6241F829A00E371E4 /* SecondVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVM.swift; sourceTree = "<group>"; };
+		FD0747E9241F82B300E371E4 /* FirstCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCoordinator.swift; sourceTree = "<group>"; };
+		FD0747EB241F82C000E371E4 /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
+		FD0747ED241F840700E371E4 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		FD0747EF241F841800E371E4 /* StoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
+		FD0747F1241F842A00E371E4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA979CD09FC4EC0259484823 /* Pods_Rx_MVVM_C_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45002248AAFF9269DA71C7B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23C4D062843F96401C133855 /* Pods_Rx_MVVM_C_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7FAAD027C1A785DC2ACC168 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				238E92FD073F302DA731E0A7 /* Pods-Rx-MVVM-C Test.debug.xcconfig */,
+				FAF1623C57C3FF397FB40E2F /* Pods-Rx-MVVM-C Test.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FD0747BC241F81E200E371E4 = {
 			isa = PBXGroup;
 			children = (
 				FD0747C7241F81E200E371E4 /* Rx-MVVM-C Test */,
 				FD0747C6241F81E200E371E4 /* Products */,
+				B7FAAD027C1A785DC2ACC168 /* Pods */,
+				45002248AAFF9269DA71C7B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +98,64 @@
 		FD0747C7241F81E200E371E4 /* Rx-MVVM-C Test */ = {
 			isa = PBXGroup;
 			children = (
-				FD0747C8241F81E200E371E4 /* AppDelegate.swift */,
-				FD0747CA241F81E200E371E4 /* SceneDelegate.swift */,
-				FD0747CC241F81E200E371E4 /* ViewController.swift */,
-				FD0747CE241F81E200E371E4 /* Main.storyboard */,
-				FD0747D1241F81E300E371E4 /* Assets.xcassets */,
-				FD0747D3241F81E300E371E4 /* LaunchScreen.storyboard */,
 				FD0747D6241F81E300E371E4 /* Info.plist */,
+				FD0747DE241F822400E371E4 /* App */,
+				FD0747E8241F82A000E371E4 /* Base */,
+				FD0747DC241F820F00E371E4 /* FirstScene */,
+				FD0747DD241F821D00E371E4 /* SecondScene */,
+				FD0747DF241F823A00E371E4 /* Resouces */,
 			);
 			path = "Rx-MVVM-C Test";
+			sourceTree = "<group>";
+		};
+		FD0747DC241F820F00E371E4 /* FirstScene */ = {
+			isa = PBXGroup;
+			children = (
+				FD0747E9241F82B300E371E4 /* FirstCoordinator.swift */,
+				FD0747E4241F828D00E371E4 /* FirstVM.swift */,
+				FD0747CC241F81E200E371E4 /* ViewController.swift */,
+				FD0747CE241F81E200E371E4 /* Main.storyboard */,
+			);
+			path = FirstScene;
+			sourceTree = "<group>";
+		};
+		FD0747DD241F821D00E371E4 /* SecondScene */ = {
+			isa = PBXGroup;
+			children = (
+				FD0747EB241F82C000E371E4 /* SecondCoordinator.swift */,
+				FD0747E6241F829A00E371E4 /* SecondVM.swift */,
+				FD0747E2241F827F00E371E4 /* SecondViewController.swift */,
+				FD0747E0241F826600E371E4 /* Second.storyboard */,
+			);
+			path = SecondScene;
+			sourceTree = "<group>";
+		};
+		FD0747DE241F822400E371E4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FD0747C8241F81E200E371E4 /* AppDelegate.swift */,
+				FD0747CA241F81E200E371E4 /* SceneDelegate.swift */,
+				FD0747F1241F842A00E371E4 /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FD0747DF241F823A00E371E4 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				FD0747D1241F81E300E371E4 /* Assets.xcassets */,
+				FD0747D3241F81E300E371E4 /* LaunchScreen.storyboard */,
+			);
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		FD0747E8241F82A000E371E4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FD0747ED241F840700E371E4 /* MainCoordinator.swift */,
+				FD0747EF241F841800E371E4 /* StoryboardInitializable.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD0747D9241F81E300E371E4 /* Build configuration list for PBXNativeTarget "Rx-MVVM-C Test" */;
 			buildPhases = (
+				5BD3423AB6DC92B32E749C5E /* [CP] Check Pods Manifest.lock */,
 				FD0747C1241F81E200E371E4 /* Sources */,
 				FD0747C2241F81E200E371E4 /* Frameworks */,
 				FD0747C3241F81E200E371E4 /* Resources */,
+				277BD827DDBF0DA7AEC4FCDE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0747E1241F826600E371E4 /* Second.storyboard in Resources */,
 				FD0747D5241F81E300E371E4 /* LaunchScreen.storyboard in Resources */,
 				FD0747D2241F81E300E371E4 /* Assets.xcassets in Resources */,
 				FD0747D0241F81E200E371E4 /* Main.storyboard in Resources */,
@@ -133,13 +227,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		277BD827DDBF0DA7AEC4FCDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rx-MVVM-C Test/Pods-Rx-MVVM-C Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rx-MVVM-C Test/Pods-Rx-MVVM-C Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rx-MVVM-C Test/Pods-Rx-MVVM-C Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BD3423AB6DC92B32E749C5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rx-MVVM-C Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FD0747C1241F81E200E371E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0747F2241F842A00E371E4 /* AppCoordinator.swift in Sources */,
+				FD0747EA241F82B300E371E4 /* FirstCoordinator.swift in Sources */,
+				FD0747E3241F827F00E371E4 /* SecondViewController.swift in Sources */,
+				FD0747EC241F82C000E371E4 /* SecondCoordinator.swift in Sources */,
 				FD0747CD241F81E200E371E4 /* ViewController.swift in Sources */,
 				FD0747C9241F81E200E371E4 /* AppDelegate.swift in Sources */,
+				FD0747E5241F828D00E371E4 /* FirstVM.swift in Sources */,
+				FD0747F0241F841800E371E4 /* StoryboardInitializable.swift in Sources */,
+				FD0747E7241F829A00E371E4 /* SecondVM.swift in Sources */,
+				FD0747EE241F840700E371E4 /* MainCoordinator.swift in Sources */,
 				FD0747CB241F81E200E371E4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,11 +426,13 @@
 		};
 		FD0747DA241F81E300E371E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 238E92FD073F302DA731E0A7 /* Pods-Rx-MVVM-C Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
 				INFOPLIST_FILE = "Rx-MVVM-C Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +446,13 @@
 		};
 		FD0747DB241F81E300E371E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAF1623C57C3FF397FB40E2F /* Pods-Rx-MVVM-C Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RH4ADBYDUN;
 				INFOPLIST_FILE = "Rx-MVVM-C Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
