@@ -22,7 +22,7 @@
 		FD0747EC241F82C000E371E4 /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0747EB241F82C000E371E4 /* SecondCoordinator.swift */; };
 		FD0747EE241F840700E371E4 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0747ED241F840700E371E4 /* MainCoordinator.swift */; };
 		FD0747F0241F841800E371E4 /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0747EF241F841800E371E4 /* StoryboardInitializable.swift */; };
-		FD0747F2241F842A00E371E4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0747F1241F842A00E371E4 /* AppCoordinator.swift */; };
+		FD0747F4241FAD5600E371E4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0747F3241FAD5600E371E4 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +45,7 @@
 		FD0747EB241F82C000E371E4 /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
 		FD0747ED241F840700E371E4 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		FD0747EF241F841800E371E4 /* StoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
-		FD0747F1241F842A00E371E4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FD0747F3241FAD5600E371E4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +135,7 @@
 			children = (
 				FD0747C8241F81E200E371E4 /* AppDelegate.swift */,
 				FD0747CA241F81E200E371E4 /* SceneDelegate.swift */,
-				FD0747F1241F842A00E371E4 /* AppCoordinator.swift */,
+				FD0747F3241FAD5600E371E4 /* AppCoordinator.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -274,7 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD0747F2241F842A00E371E4 /* AppCoordinator.swift in Sources */,
+				FD0747F4241FAD5600E371E4 /* AppCoordinator.swift in Sources */,
 				FD0747EA241F82B300E371E4 /* FirstCoordinator.swift in Sources */,
 				FD0747E3241F827F00E371E4 /* SecondViewController.swift in Sources */,
 				FD0747EC241F82C000E371E4 /* SecondCoordinator.swift in Sources */,
