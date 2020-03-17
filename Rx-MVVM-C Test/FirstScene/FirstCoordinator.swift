@@ -22,7 +22,7 @@ class FirstCoordinator: MainCoordinator<Void> {
         
         let viewModel = FirstVM()
         let viewController = ViewController.initFromStoryboard(name: "Main")
-        let navigationController = UINavigationController(rootViewController: viewController)
+//        let navigationController = UINavigationController(rootViewController: viewController)
         
         viewController.viewModel = viewModel
         
@@ -33,7 +33,7 @@ class FirstCoordinator: MainCoordinator<Void> {
         }).disposed(by: disposeBag)
         
         
-        window.rootViewController = navigationController
+        window.rootViewController = viewController
         window.makeKeyAndVisible()
         
         return Observable.never()

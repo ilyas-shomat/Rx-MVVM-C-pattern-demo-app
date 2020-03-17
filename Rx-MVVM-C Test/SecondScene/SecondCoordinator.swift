@@ -22,7 +22,7 @@ class SecondCoordinator: MainCoordinator<Void> {
     override func start(data: String) -> Observable<Void> {
         
         let viewController = SecondViewController.initFromStoryboard(name: "Second")
-        let navigationController = UINavigationController(rootViewController: viewController)
+//        let navigationController = UINavigationController(rootViewController: viewController)
         
         let viewModel = SecondVM()
         viewController.viewModel = viewModel
@@ -30,8 +30,8 @@ class SecondCoordinator: MainCoordinator<Void> {
         viewModel.someString.accept(data)
 //        viewModel.withoutBR = data
         
-        navigationController.modalPresentationStyle = .overFullScreen
-        rootViewController.present(navigationController, animated: true)
+        viewController.modalPresentationStyle = .overFullScreen
+        rootViewController.present(viewController, animated: true)
         
         
         return Observable.never()
