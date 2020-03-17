@@ -14,7 +14,18 @@ final class SecondVM{
     
     private let disposeBag = DisposeBag()
     
+    var someString = BehaviorRelay<String>(value: "starter")
+    
+//    var  withoutBR = String()
+    
     init() {
         
+        someString.subscribe(onNext: {data in
+            
+            print(data)
+            })
+        
+        
+//        print("here a string without: \(withoutBR)")
     }
 }

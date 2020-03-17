@@ -32,8 +32,16 @@ class MainCoordinator<ResultType> {
         return coordinator.start().do(onNext: { [self] _ in self.free(coordinator: coordinator) })
     }
     
+    func coordinate<T>(to coordinator: MainCoordinator<T>, data: String) -> Observable<T> {
+        store(coordinator: coordinator)
+        return coordinator.start(data: data).do(onNext: { [self] _ in self.free(coordinator: coordinator) })
+    }
     
     func start() -> Observable<ResultType> {
+        fatalError("Start method should be implemented")
+    }
+    
+    func start(data: String)-> Observable<ResultType> {
         fatalError("Start method should be implemented")
     }
 }

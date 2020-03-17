@@ -23,6 +23,7 @@ final class FirstVM {
 
     let showSecondPage: Observable<Void>
     
+    let oneString:String = "some string from VM"
     
     init() {
     

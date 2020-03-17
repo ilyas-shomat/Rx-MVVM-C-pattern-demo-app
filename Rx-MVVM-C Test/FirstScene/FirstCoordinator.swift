@@ -29,7 +29,7 @@ class FirstCoordinator: MainCoordinator<Void> {
         viewModel.showSecondPage.subscribe(onNext: {
             
 //            print("dsjdhao")
-            self.showSecondPage(on: viewController)
+            self.showSecondPage(on: viewController, data: viewModel.oneString)
         }).disposed(by: disposeBag)
         
         
@@ -40,10 +40,12 @@ class FirstCoordinator: MainCoordinator<Void> {
         
     }
     
-    private func showSecondPage(on rootVC: UIViewController)-> Observable<Void> {
+    private func showSecondPage(on rootVC: UIViewController, data: String)-> Observable<Void> {
         
         let secondCoordinator = SecondCoordinator(rootViewController: rootVC)
-        return coordinate(to: secondCoordinator)
+        
+        return coordinate(to: secondCoordinator, data: data)
+       
         
     }
 }
