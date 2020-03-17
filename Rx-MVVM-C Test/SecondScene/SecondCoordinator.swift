@@ -13,11 +13,14 @@ import RxSwift
 class SecondCoordinator: MainCoordinator<Void> {
     
     private let rootViewController: UIViewController
+   
     
     init(rootViewController: UIViewController) {
         self.rootViewController = rootViewController
     }
     
+    
+   
     
     override func start(data: String) -> Observable<Void> {
         
@@ -34,11 +37,38 @@ class SecondCoordinator: MainCoordinator<Void> {
         rootViewController.present(viewController, animated: true)
         
         
+        
         return Observable.never()
         
        
     }
+
+}
+
+class SecondCoordinatorStarter: MainCoordinator<Void> {
     
-    
-    
+        private let window: UIWindow
+        
+        init(window: UIWindow) {
+            self.window = window
+        }
+        
+        override func start() -> Observable<Void> {
+            
+            
+            let viewController = SecondViewController.initFromStoryboard(name: "Second")
+    //        let navigationController = UINavigationController(rootViewController: viewController)
+            
+            let viewModel = SecondVM()
+            viewController.viewModel = viewModel
+            
+            
+            window.rootViewController = viewController
+            window.makeKeyAndVisible()
+            
+            return Observable.never()
+            
+        }
+        
+
 }

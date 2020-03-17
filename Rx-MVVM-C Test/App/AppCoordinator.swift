@@ -8,6 +8,7 @@
 
 import Foundation
 import RxSwift
+import UIKit
 
 class AppCoordinator: MainCoordinator<Void> {
 
@@ -18,7 +19,12 @@ class AppCoordinator: MainCoordinator<Void> {
     }
 
     override func start() -> Observable<Void> {
+        
+        
+        
         let firstCoordinator = FirstCoordinator(window: window)
-        return coordinate(to: firstCoordinator)
+        let secondCoordinator = SecondCoordinatorStarter(window: window)
+        
+        return coordinate(to: secondCoordinator)
     }
 }
